@@ -1,0 +1,24 @@
+
+@font-face {
+    font-family: BrittanySignature;
+    src: url(Media/Fuentes/BrittanySignature.ttf);
+}
+@font-face {
+    font-family: BodoniModa;
+    src: url(Media/Fuentes/BodoniModa-Italic-VariableFont_opsz\,wght.ttf);
+}
+
+//fuentes
+$font-titles: "BrittanySignature";
+$font-paragraph: "BodoniModa";
+
+//colores
+$primary-color: #66cc99;
+$secondary-color: #20B2AA;
+$font-color:#000;
+
+//tamanio-fuentes
+$titles: 250%;
+$paragraph: 100%;
+$titles-tablet: 200%;
+$paragraph-tablet: 80%;

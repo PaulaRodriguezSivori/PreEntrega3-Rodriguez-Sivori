@@ -1,0 +1,121 @@
+//styles para la @media: max-width-768px
+
+@media (max-width: 768px){
+    .header{
+        .container{
+            .nav1{
+                display: inline-block;
+                @include wi-y-he( 130px, 50px);
+                font-size: 30px ;
+                margin-left: 60px;
+                margin-right: 60px;
+                margin-bottom: 20px;
+            }
+            .navbar-expand-lg .navbar-toggler {
+                display: none;
+            }
+            .navbar-expand-lg .navbar-collapse {
+                display: flex;
+            }
+        }
+    }
+
+    .main{
+        .sec2{
+            font-size: $titles-tablet;
+        }
+        .par1{
+            font-size: $paragraph-tablet;
+        }
+    }
+
+    .footer{
+        .h3{
+            font-size: 150%;
+        }
+        .foot1{
+            font-size: $titles-tablet;
+        }
+    }
+
+    .main{
+        .stit{
+            font-size: $titles-tablet;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .spart1{
+            font-size: $paragraph-tablet;
+        }
+        .sfot{
+            width: 20%;
+        }
+        .scont{
+            display: inline-block;
+            margin-bottom: 30px;
+            width: 100%;
+            .sfot1{
+                width: 20%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left:75px;
+            }
+        }
+    }
+
+    .main{
+        .sicont1{
+            display: inline-block;
+            width: 750px;
+            .signos{
+                @include wi-y-he( 90px, 50px);
+                font-size: 20px ;
+                margin-left: 15px;
+                margin-top: 15px;
+                margin-bottom: 20px;
+            }
+         }
+        .sicontenedor{
+            @include wi-y-he( 700px, auto);
+            display: inline-flex;
+            .sicont{
+                font-family: $font-paragraph ;
+                font-size: 15px;
+                text-align: justify;
+                width: 600px;
+                margin-right: 50px;
+            }
+            .sifot{
+                @include wi-y-he(15.625em, 9.375em);
+            }
+        }
+        .sicont1{
+            display: inline-block;
+            width: 750px;
+        }
+        .sitit{
+            font-family: $font-titles;
+            font-size: $titles-tablet;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            text-align: center;
+            text-shadow: 3px 3px 3px
+        }
+    }
+
+    .main{
+        .cologo{
+            @include wi-y-he(3.75em, 3.75em);
+            margin-left: 128px;
+            margin-top: 50px;
+        }
+        .cocont{
+            margin-bottom: 30px;
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 700px;
+        }
+    }
+}

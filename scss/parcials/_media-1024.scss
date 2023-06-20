@@ -1,0 +1,63 @@
+//styles para la @media: max-width-1024px
+
+@media (max-width:1024px){
+    .header{
+        .container{
+            .nav1{
+                @include wi-y-he( 150px, 50px);
+                font-size: 30px ;
+                margin-bottom: 5px;
+            }
+            .navbar-expand-lg .navbar-toggler {
+                display: none;
+            }
+            .navbar-expand-lg .navbar-collapse {
+                display: flex;
+            }
+        }
+    }
+
+    .main{
+        .ssection{
+         .sfot{
+                 width: 25%;
+            }
+        }
+        .scont{
+            .sfot1{
+             width: 20%;
+                margin-top: 20px;
+             margin-bottom: 20px;
+                margin-left: 100px;
+            }
+        }
+    }
+
+    .main{
+        .sicont1{
+            display: inline-block;
+            width: 850px;
+            .signos{
+                @include wi-y-he( 90px, 50px);
+                font-size: 20px;
+                margin-left: 30px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+        .sicontenedor{
+            @include wi-y-he( 850px, auto);
+            display: inline-flex;
+            .sicont{
+                font-family: $font-paragraph ;
+                font-size: 15px;
+                text-align: justify;
+                width: 600px;
+                margin-right: 50px;
+            }
+            .sifot{
+                @include wi-y-he( 18.75em, 12.50em);
+            }
+        }
+    }
+}

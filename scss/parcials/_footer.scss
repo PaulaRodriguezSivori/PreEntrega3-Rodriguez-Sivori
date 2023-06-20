@@ -1,0 +1,23 @@
+//styles footer
+
+.footer{
+    .h3{
+        font-size: 200%;
+        text-align: center;
+        text-shadow: 3px 3px 3px;
+    }
+    .redes{
+        margin-bottom: 20px;
+    }
+    .icon{
+        width: 7%;
+    }
+    .foot2 :hover{
+        color: $secondary-color;
+    }
+    .foot1{
+        font-size: $titles;
+        text-shadow: 3px 3px 3px;
+        padding: 70px;
+    }
+}

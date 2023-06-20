@@ -1,0 +1,61 @@
+//styles del html:index
+
+.main{
+    .video{
+        width: auto;
+        display: flex;
+        margin-bottom: 50px;
+        justify-content: center;
+        margin-top: 30px;
+        .video1{
+            width: 50%;
+        }
+    }
+    .section1{
+        @include flex-column-center;
+        align-content: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 70px;
+        #carouselExample{
+            width: 50%;
+        }
+    }
+    .article{
+        display: inline-flex;
+        margin-bottom: 10px;
+        .section2{
+            display:inline-flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .section3{
+            @extend .section2
+        }
+    } 
+    .sec1{
+        width: 60%;
+    }
+    .sec3{
+        width: 67%;
+    }
+    .sec2{
+        font-family: $font-titles;
+        font-size: $titles;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        text-shadow: 3px 3px 3px; 
+        & :hover{
+            color: $secondary-color;
+        }
+    }
+    .par1{
+        font-family: $font-paragraph ;
+        font-size: $paragraph;
+        text-align: justify;
+    }
+}

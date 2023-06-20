@@ -1,0 +1,15 @@
+//fondo del sitio
+
+.fondo-foto{
+    background-image:url(Media/FONDO.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+//styles de los links
+
+a{
+    text-decoration: none;
+    color: $font-color;
+}

@@ -1,0 +1,44 @@
+//styles del html:significados
+
+.main{
+    .stit{
+        font-family: $font-titles;
+        font-size: $titles;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        text-align: center;
+        text-shadow: 3px 3px 3px
+    }
+    .spart1{
+        font-family: $font-paragraph ;
+        font-size: $paragraph;
+        text-align: justify;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .ssection{
+        @include flex-column-center;
+        width: 100%;
+        .sfot{
+            width: 15%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    .stit1{
+        @extend .stit;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .scont{
+        display: inline-block;
+        margin-bottom: 30px;
+        width: 100%;
+        .sfot1{
+            width: 20%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 150px;
+        }
+    }
+}

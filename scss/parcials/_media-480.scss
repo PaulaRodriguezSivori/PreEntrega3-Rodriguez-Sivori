@@ -1,0 +1,215 @@
+//styles para la @media: max-width-480px
+
+@media (max-width:480px){
+    .header{
+        .container{
+            .nav1{
+                @include wi-y-he( 100px, 30px);
+                font-size: 20px ;
+                margin-bottom: 5px;
+            }
+            .navbar{
+                background-color: $primary-color;
+                border-radius: 10px;
+                box-shadow: 2px 4px 15px #000;
+            }
+            .navbar-expand-lg{
+                background: linear-gradient(0deg, rgba(102,204,153,1) 0%, rgba(32,178,170,1) 100%);
+            }
+            .navbar-expand-lg .navbar-toggler{
+                display: flex;
+            } 
+            .navbar-toggler-icon {
+                width: 15px
+            }
+            .navbar-expand-lg .navbar-collapse {
+                display: flex;
+                flex-basis: auto;
+            }
+            .collapse:not(.show) {
+                display: none
+            }
+            .navbar-collapse {
+                flex-basis: 100%;
+                flex-grow: 1;
+            }
+        }
+        .logo{
+            width: 30%;    
+        }
+        .banner{
+            @include wi-y-he( 100%, auto);
+        }
+    }
+    .main{
+        .video{
+            margin-bottom: 20px;
+            .video1{
+                @include wi-y-he( 80%, auto);
+            }
+        }
+        .article{
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .section1{
+            margin-bottom: 20px;
+            #carouselExample{
+                width: 70%;
+            }
+        }
+        .sec2{
+            font-size: 110%;
+        }
+        .par1{
+            font-size: 70%;
+        }
+    }
+    .footer{
+        .h3{
+            font-size: 90%;
+        }
+        .icon{
+            width: 10%;
+        }
+        .foot1{
+            font-size: 130%;
+            padding: 50px;
+        }
+    }
+
+    .main{
+        .stit{
+            font-size: 130%;
+        }
+        .spart1{
+            font-size: 70%;
+        }
+        .stit1{
+            font-size: 130%;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+        .ssection{
+            .sfot{
+                width: 50%;
+            }
+        }
+        .scont{
+            display: inline-block;
+            margin-bottom: 30px;
+            width: 100%;
+            .sfot1{
+                width: 40%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left:20px;
+            }
+        }
+    }
+
+    .main{
+        .produc{
+            display: inline-block;
+            @include wi-y-he( 80px, 40px);
+            font-size: 20px ;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 20px;
+        }
+        .prtit1{
+            font-size: 25px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
+        .prcont2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 10px;
+            .prtit{
+                font-size: 10px;
+            }
+            .prfot{
+                width: 60%;
+                margin: 10px;
+            }
+        }
+        .prcont3{
+            @include wi-y-he (80%, auto);
+        }
+    }
+
+    .main{
+        .boton{
+            @include flex-column-center;
+            .btn{
+                background-color: $primary-color;
+                @include wi-y-he( 130px, 50px);
+                color: $font-color;
+                font-family:$font-titles;
+                font-size: 30px ;
+                text-align: center;
+                text-shadow: 3px 3px 3px;
+                border-radius: 30px;
+                box-shadow: 2px 4px 15px $font-color;
+                & :hover{
+                    background-color: $secondary-color;
+                    color: $font-color;
+                }
+            }
+            .dropdown-menu{
+                background-color: $primary-color;
+            }
+            .dropdown-item{
+                color: $font-color;
+                font-family: $font-titles;
+                font-size: 20px ;
+                text-align: justify;
+                text-shadow: 3px 3px 3px;
+                &:hover{
+                    background-color: $secondary-color;
+                }
+            }
+        }
+        .sicont1{
+            display: none
+        }
+        .sicontenedor{
+            @include wi-y-he( 300px, auto);
+            @include flex-column-center;
+            margin-bottom: 10px;
+            .sicont{
+                font-family: $font-paragraph ;
+                font-size: 10px;
+                text-align: justify;
+                width: 300px;
+                margin-right: 0%;
+                .sifot{
+                    @include wi-y-he( 15.625em, 9.375em);
+                }
+            }
+        }
+        .sitit{
+            font-size: 150%;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+    }
+    
+    .main{
+        .cologo{
+            @include wi-y-he(3.125em, 3.125em);
+            margin-left: 120px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .cocont{
+            margin-bottom: 30px;
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 250px;
+        }
+    }
+}

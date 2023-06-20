@@ -1,0 +1,52 @@
+//styles del html:productos
+
+.main{
+    .produc{
+        display: inline-block;
+        background-color: $primary-color;
+        @include wi-y-he (120px, 70px);
+        font-family: $font-titles;
+        font-size: 30px ;
+        text-align: center;
+        text-shadow: 3px 3px 3px;
+        border-radius: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 80px;
+        box-shadow: 2px 4px 15px #000;
+        &:hover{
+            background-color: $secondary-color;
+        }
+    }
+    .prtit1{
+        font-family: $font-titles;
+        font-size: 40px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        text-align: center;
+        text-shadow: 3px 3px 3px;
+    }
+    .prcont2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        .prcont1{
+            @include flex-column-center;
+            .prfot{
+                width: 50%;
+                margin: 20px;
+            }
+            .prtit{
+                font-family: $font-paragraph;
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+    }
+    .prcont3{
+        @include flex-column-center;
+        @include wi-y-he (50%, auto);
+        margin-bottom: 50px;
+    }
+}

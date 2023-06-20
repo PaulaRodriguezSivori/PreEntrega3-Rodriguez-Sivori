@@ -1,0 +1,32 @@
+//layout de las paginas
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: auto;
+}
+
+.header{
+    grid-area: header;
+    @include flex-column-center
+}
+
+.main{
+    grid-area: main;
+    @include flex-column-center
+}
+
+.footer{
+    grid-area: footer;
+    display: inline-block;
+    font-family: "BrittanySignature";
+    text-align: center;
+}
